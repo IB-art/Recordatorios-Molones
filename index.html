@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recordatorios Molones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>📌 Recordatorios Molones</h1>
+      <p>Tu lista interactiva de tareas con alertas a tiempo</p>
+      <form id="task-form">
+        <input type="text" id="task-text" placeholder="Escribe tu idea o tarea" required />
+        <div class="task-box">
+          <input type="date" id="task-date" required />
+          <input type="time" id="task-time" required />
+        </div>
+
+        <button type="submit">Agregar tarea</button>
+      </form>
+
+      <ul id="task-list"></ul>
+    </div>
+
+    <!-- <audio id="alert-sound" src="alerta.mp3" preload="auto"></audio> -->
+    <audio id="alert-sound" preload="auto">
+      <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+
+
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
